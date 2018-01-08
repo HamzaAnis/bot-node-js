@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/HamzaAnis/bot-node-js/issues"
   },
-  "homepage": "https://github.com/HamzaAnis/bot-node-js#readme"
+  "homepage": "https://github.com/HamzaAnis/bot-node-js#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.14.9"
+  }
 }

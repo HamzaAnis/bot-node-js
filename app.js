@@ -1,10 +1,4 @@
-var clockwork = require('clockwork')({key:'b6433f242a0d6ce74b1ae41669009580e0710001'});
-
-clockwork.sendSms({ To: '00923420011719', Content: 'Test!'}, 
-  function(error, resp) {
-    if (error) {
-        console.log('Something went wrong', error);
-    } else {
-        console.log('Message sent',resp.responses[0].id);
-    }
-});
+var express = require('express');
+var app = express();
+app.get('/receive', function (req, res) {  res.send('Hi, this is the TwilioBot listening endpoint!'); });
+app.listen(8080, function () {  console.log('TwilioBot listening on port 8080.'); }); 
